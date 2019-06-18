@@ -1,0 +1,25 @@
+{
+  "name": "crisscross",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberpwnn/CrissCross.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyberpwnn/CrissCross/issues"
+  },
+  "homepage": "https://github.com/cyberpwnn/CrissCross#readme",
+  "devDependencies": {
+    "electron": "^5.0.4"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0"
+  }
+}
