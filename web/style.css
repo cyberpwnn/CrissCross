@@ -6,6 +6,7 @@
     --foreground: rgb(22, 22, 22);
     --primary: rgb(235, 235, 235);
     --primaryDark: rgb(219, 219, 219);
+    --borderColor: rgb(219, 219, 219);
 }
 
 [data-theme="dark"] {
@@ -13,6 +14,7 @@
     --foreground: rgb(203, 224, 216);
     --primary: rgb(56, 73, 80);
     --primaryDark: rgb(43, 57, 63);
+    --borderColor: rgb(43, 57, 63);
 }
 
 [data-theme="darker"] {
@@ -20,6 +22,7 @@
     --foreground: rgb(199, 195, 135);
     --primary: rgb(47, 47, 45);
     --primaryDark: rgb(36, 36, 34);
+    --borderColor: rgb(36, 36, 34);
 }
 
 [data-theme="oled"] {
@@ -27,6 +30,12 @@
     --foreground: rgb(255, 255, 255);
     --primary: rgb(0, 0, 0);
     --primaryDark: rgb(0, 0, 0);
+    --borderColor: rgb(133, 133, 133);
+}
+
+.content
+{
+    margin: 0 auto;
 }
 
 .appbrand
@@ -38,6 +47,23 @@
 {
     background: var(--primary);
     color: var(--foreground);
+}
+
+.collapsible-header
+{
+    background: var(--primary);
+    border-color: var(--borderColor);
+}
+
+.collapsible-body
+{
+    background: var(--primaryDark);
+    border-color: var(--borderColor);
+}
+
+.collapsible
+{
+    border-color: var(--borderColor);
 }
 
 /* Styles */

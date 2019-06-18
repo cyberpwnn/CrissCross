@@ -66,5 +66,14 @@ function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme); 
 }
 
+function initMaterial()
+{
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, {accordian: true});
+      });
+}
+
 mountApplication();
 setTheme("dark");
+initMaterial();
