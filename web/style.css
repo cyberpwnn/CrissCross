@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+/* Colors */
+:root {
+    --background: rgb(255, 255, 255);
+    --foreground: rgb(22, 22, 22);
+    --primary: rgb(235, 235, 235);
+    --primaryDark: rgb(219, 219, 219);
+}
+
+[data-theme="dark"] {
+    --background: rgb(49, 59, 63);
+    --foreground: rgb(203, 224, 216);
+    --primary: rgb(56, 73, 80);
+    --primaryDark: rgb(43, 57, 63);
+}
+
+[data-theme="darker"] {
+    --background: rgb(24, 28, 29);
+    --foreground: rgb(199, 195, 135);
+    --primary: rgb(47, 47, 45);
+    --primaryDark: rgb(36, 36, 34);
+}
+
+[data-theme="oled"] {
+    --background: rgb(0, 0, 0);
+    --foreground: rgb(255, 255, 255);
+    --primary: rgb(0, 0, 0);
+    --primaryDark: rgb(0, 0, 0);
+}
+
+.appbrand
+{
+    color: var(--foreground);
+}
+
+.appbar
+{
+    background: var(--primary);
+    color: var(--foreground);
+}
+
+/* Styles */
+.frametitlebar
+{
+    background: var(--primaryDark);
+    color: var(--foreground);
+    max-height: 1.7em;
+    min-height: 1.7em;
+    height: 1.7em;
+    width: 100%;
+}
+
+.framebuttons
+{
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+    height: 100%;
+    width: fit-content;
+}
+
+.titleicon
+{
+    height: 90%;
+}
+
+.framebuttonsmac
+{
+    flex-direction: row;
+    float: left;
+}
+
+.frametitle
+{
+    height: 100%;
+    display: flex;
+    padding-left: 45%;
+    padding-right: 45%;
+    align-items: center;
+}
+
+/* Core Classes */
+.draggable
+{
+    -webkit-app-region: drag;
+}
+
+.nondraggable
+{
+    -webkit-app-region: no-drag;
+}
+
+.selectable
+{
+    -webkit-user-select: text;
+}
+
+.nonselectable
+{
+    -webkit-user-select: none;
+}
+
+/* Overrides */
+div
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Roboto', sans-serif;
+}
+
+p
+{
+    margin-block-end: 0;
+    margin-block-start: 0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="materialize.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app-mount" class="nondraggable nonselectable">
+      <div id="app-frame" class="draggable frametitlebar">
+        <div id="app-frame-buttons" class="framebuttons">
+          <div id="app-frame-close" class="nondraggable" onclick="closeElectronWindow()"><i class="material-icons">close</i></div>
+          <div id="app-frame-max" class="nondraggable" onclick="zoomElectronWindow()"><i class="material-icons">keyboard_arrow_up</i></div>
+          <div id="app-frame-min" class="nondraggable" onclick="minimizeElectronWindow()"><i class="material-icons">keyboard_arrow_down</i></div>
+          <!-- <div id="app-frame-title" class="frametitle">
+              <img class="titleicon" src="icon.png">
+              Hello
+          </div> -->
+        </div>
+      </div>
+      <div id="app-content">
+        <div class="navbar-fixed">
+            <nav>
+              <div class="nav-wrapper appbar">
+                <a href="#!" class="brand-logo"><p class = "appbrand">Criss Cross</p></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="windowManager.js"></script>
+  <script type="text/javascript" src="materialize.js"></script>
+</html>
