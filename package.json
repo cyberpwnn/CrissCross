@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/cyberpwnn/CrissCross#readme",
   "devDependencies": {
-    "electron": "^5.0.4"
+    "electron": "^11.5.0"
   },
   "dependencies": {
     "electron-reload": "^1.4.0"
